@@ -110,11 +110,23 @@
             </div>
           </div>
         </li>
-        <li class="bold"><a routerLink="login-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+        <li class="bold"><a routerLink="login-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-input"></i> Login</a>
+        </li>
+        <li class="bold"><a routerLink="dashboard-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+        </li>
+        <li class="bold"><a routerLink="course-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-class"></i> Les</a>
+        </li>
+        <li class="bold"><a routerLink="courses-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-domain"></i> Lessen</a>
+        </li>
+        <li class="bold"><a routerLink="profile-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Profiel</a>
+        </li>
+        <li class="bold"><a routerLink="admin-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-person-add"></i> Admin</a>
+        </li>
+        <li class="bold"><a routerLink="notfound-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-alert-warning"></i> 505 Error</a>
         </li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i> Layouts</a>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i> Sub Menu</a>
               <div class="collapsible-body">
                 <ul>
                   <li><a href="layout-fullscreen.html">Full Screen</a>
@@ -129,6 +141,7 @@
       </ul>
       <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
     </aside>
+    
     <!-- END LEFT SIDEBAR NAV-->
     <!-- //////////////////////////////////////////////////////////////////////////// -->
     <!-- START CONTENT -->
@@ -140,7 +153,7 @@
           <i class="mdi-action-search active"></i>
           <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Zoekopdracht">
         </div>
-        <div class="container">
+        <div class="container" [hidden]="!showbreadcrumbs">
           <div class="row">
             <div class="col s12 m12 l12">
               <h5 class="breadcrumbs-title">Blank Page</h5>

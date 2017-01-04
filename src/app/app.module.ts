@@ -19,9 +19,10 @@ const appRoutes: Routes = [
   { path: 'profile-view', component: ProfileComponent },
   { path: 'course-view', component: CourseComponent },
   { path: 'courses-view', component: CoursesComponent },
-  { path: 'admin', component: AdminComponent },
+  { path: 'admin-view', component: AdminComponent },
   { path: '',   redirectTo: '/login-view', pathMatch: 'full' },
-  { path: '**', component: NotfoundComponent }
+  { path: '**', component: NotfoundComponent },
+  { path: 'notfound-view', component: NotfoundComponent }
 ];
 
 @NgModule({
