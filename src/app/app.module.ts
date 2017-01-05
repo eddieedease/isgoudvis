@@ -14,6 +14,8 @@ import { AdminComponent } from './admin/admin.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SearchComponent } from './search/search.component';
 
+import { TreeModule } from 'angular2-tree-component';
+
 const appRoutes: Routes = [
   { path: 'login-view', component: LoginComponent },
   { path: 'dashboard-view', component: DashboardComponent },
@@ -42,7 +44,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    TreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
