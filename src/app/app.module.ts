@@ -12,6 +12,7 @@ import { CourseComponent } from './course/course.component';
 import { CoursesComponent } from './courses/courses.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { SearchComponent } from './search/search.component';
 
 const appRoutes: Routes = [
   { path: 'login-view', component: LoginComponent },
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     CourseComponent,
     CoursesComponent,
     AdminComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

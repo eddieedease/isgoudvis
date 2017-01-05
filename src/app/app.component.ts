@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'app works!';
 
   // Show breadcrumbs
-  showbreadcrumbs = true;
+  showbreadcrumbs = false;
 
 
   history: string[] = [];
