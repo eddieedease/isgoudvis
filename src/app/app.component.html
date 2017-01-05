@@ -19,7 +19,7 @@
         </div>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button" data-activates="translation-dropdown"><img src="assets/images/flag-icons/United-States.png" alt="USA" /></a>
+            <a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button" data-activates="translation-dropdown"><img src="assets/images/flag-icons/Netherlands.png" alt="USA" /></a>
           </li>
           <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
           </li>
@@ -33,7 +33,7 @@
         <!-- translation-button -->
         <ul id="translation-dropdown" class="dropdown-content">
           <li>
-            <a href="#!"><img src="assets/images/flag-icons/United-States.png" alt="English" /> <span class="language-select">English</span></a>
+            <a href="#!"><img src="assets/images/flag-icons/Netherlands.png" alt="English" /> <span class="language-select">Nederlands</span></a>
           </li>
           <li>
             <a href="#!"><img src="assets/images/flag-icons/France.png" alt="French" /> <span class="language-select">French</span></a>
@@ -110,23 +110,21 @@
             </div>
           </div>
         </li>
-        <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="login-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-input"></i> Login</a>
-        </li>
-        <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="dashboard-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+        <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="profile-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Profiel</a>
         </li>
         <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="course-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-class"></i> Les</a>
         </li>
         <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="courses-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-domain"></i> Lessen</a>
         </li>
-        <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="profile-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-person"></i> Profiel</a>
-        </li>
         <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="admin-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-social-person-add"></i> Admin</a>
         </li>
         <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="notfound-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-alert-warning"></i> 505 Error</a>
         </li>
+        <li class="bold"><a onclick="$('.button-collapse').sideNav('hide');" routerLink="login-view" routerLinkActive="active" class="waves-effect waves-cyan"><i class="mdi-action-input"></i> Login</a>
+        </li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i> Sub Menu</a>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i>Uitklapmenuvb</a>
               <div class="collapsible-body">
                 <ul>
                   <li><a href="layout-fullscreen.html">Full Screen</a>
@@ -149,7 +147,6 @@
       <div id="breadcrumbs-wrapper">
         <!-- Search for small screen -->
         <div class="header-search-wrapper grey hide-on-large-only">
-         
           <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Zoekopdracht">
         </div>
         <div class="container" [hidden]="!showbreadcrumbs">
@@ -190,22 +187,11 @@
     <!-- START RIGHT SIDEBAR NAV-->
     <aside id="right-sidebar-nav">
       <ul id="chat-out" class="side-nav rightside-navigation">
-        <li class="li-hover">
-          <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
-          <div id="right-search" class="row">
-            <form class="col s12">
-              <div class="input-field">
-                <i class="mdi-action-search prefix"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Search</label>
-              </div>
-            </form>
-          </div>
-        </li>
+        <span style="padding: 10px">Superhandige schortcuts over here</span>
         <li class="li-hover">
           <ul class="chat-collapsible" data-collapsible="expandable">
             <li>
-              <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+              <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Projectmensen</div>
               <div class="collapsible-body favorite-associates">
                 <div class="favorite-associate-list chat-out-list row">
                   <div class="col s4"><img src="assets/images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
