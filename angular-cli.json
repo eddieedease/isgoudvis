@@ -20,8 +20,8 @@
             "styles.css"
         ],
         "scripts": ["js/jquery.js", "js/perfect-scrollbar.min.js", "js/materialize.js", "js/plugins.js"],
+        "environmentSource": "environments/environment.ts",
         "environments": {
-            "source": "environments/environment.ts",
             "dev": "environments/environment.ts",
             "prod": "environments/environment.prod.ts"
         }
