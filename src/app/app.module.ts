@@ -15,6 +15,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { SearchComponent } from './search/search.component';
 
 import { TreeModule } from 'angular2-tree-component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const appRoutes: Routes = [
   { path: 'login-view', component: LoginComponent },
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
   { path: 'course-view', component: CourseComponent },
   { path: 'courses-view', component: CoursesComponent },
   { path: 'admin-view', component: AdminComponent },
+  { path: 'quiz-view', component: QuizComponent },
   { path: '',   redirectTo: '/login-view', pathMatch: 'full' },
   { path: '**', component: NotfoundComponent },
   { path: 'notfound-view', component: NotfoundComponent }
@@ -37,8 +39,10 @@ const appRoutes: Routes = [
     CourseComponent,
     CoursesComponent,
     AdminComponent,
+    QuizComponent,
     NotfoundComponent,
-    SearchComponent
+    SearchComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
